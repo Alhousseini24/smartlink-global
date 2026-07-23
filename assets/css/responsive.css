@@ -1,0 +1,409 @@
+/* ============================================
+   SMARTLINK GLOBAL - RESPONSIVE CSS
+   Design System v1.0
+   ============================================ */
+
+/* ==========================================
+   TABLETTES (max-width: 991px)
+   ========================================== */
+
+@media (max-width: 991px) {
+  /* General */
+  h1 {
+    font-size: var(--text-4xl);
+  }
+  
+  h2 {
+    font-size: var(--text-3xl);
+  }
+  
+  .section {
+    padding: var(--space-7) 0;
+  }
+  
+  /* Navbar */
+  .navbar-toggler {
+    display: block;
+  }
+  
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100vh;
+    background: var(--black-premium);
+    padding: var(--space-6);
+    transition: right var(--transition-slow);
+    overflow-y: auto;
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  .navbar-collapse.active {
+    right: 0;
+  }
+  
+  .navbar-nav {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-2);
+    margin-top: var(--space-6);
+  }
+  
+  .navbar-nav .nav-link {
+    padding: var(--space-2) 0;
+    font-size: var(--text-base);
+  }
+  
+  .nav-item.dropdown .dropdown-menu {
+    position: static;
+    transform: none;
+    background: rgba(255, 255, 255, 0.03);
+    border: none;
+    border-radius: var(--radius-md);
+    padding: var(--space-2) 0 var(--space-2) var(--space-4);
+    opacity: 1;
+    visibility: visible;
+    display: none;
+    box-shadow: none;
+  }
+  
+  .nav-item.dropdown .dropdown-menu.active {
+    display: block;
+  }
+  
+  .nav-item.dropdown .dropdown-toggle {
+    cursor: pointer;
+  }
+  
+  .navbar-actions {
+    margin-top: var(--space-4);
+    flex-wrap: wrap;
+  }
+  
+  .navbar-actions .btn-phone {
+    color: var(--white);
+  }
+  
+  /* Hero */
+  .hero {
+    min-height: auto;
+    padding: calc(var(--header-height) + var(--space-6)) 0 var(--space-6);
+  }
+  
+  .hero h1 {
+    font-size: var(--text-4xl);
+  }
+  
+  .hero p {
+    font-size: var(--text-base);
+  }
+  
+  .hero-floating {
+    display: none;
+  }
+  
+  /* Stats */
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+  
+  .stat-item .stat-number {
+    font-size: var(--text-3xl);
+  }
+  
+  /* Solutions */
+  .solutions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* Services */
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* Why */
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-5);
+  }
+  
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+  
+  /* Container */
+  .container {
+    padding: 0 var(--space-4);
+  }
+}
+
+/* ==========================================
+   MOBILES (max-width: 767px)
+   ========================================== */
+
+@media (max-width: 767px) {
+  /* General */
+  h1 {
+    font-size: var(--text-3xl);
+  }
+  
+  h2 {
+    font-size: var(--text-2xl);
+  }
+  
+  h3 {
+    font-size: var(--text-xl);
+  }
+  
+  .section {
+    padding: var(--space-6) 0;
+  }
+  
+  .section-header {
+    margin-bottom: var(--space-5);
+  }
+  
+  .section-header .subtitle {
+    font-size: var(--text-base);
+  }
+  
+  /* Hero */
+  .hero h1 {
+    font-size: var(--text-3xl);
+  }
+  
+  .hero p {
+    font-size: var(--text-sm);
+  }
+  
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .hero-trust {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+  }
+  
+  .hero-trust .divider {
+    display: none;
+  }
+  
+  /* Stats */
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3);
+  }
+  
+  .stat-item .stat-number {
+    font-size: var(--text-2xl);
+  }
+  
+  .stat-item .stat-label {
+    font-size: var(--text-xs);
+  }
+  
+  /* Solutions */
+  .solutions-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+  
+  .solution-card {
+    padding: var(--space-4);
+  }
+  
+  /* Services */
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+  
+  .service-card {
+    padding: var(--space-4);
+  }
+  
+  /* Why */
+  .why-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* CTA */
+  .cta-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    gap: var(--space-3);
+    text-align: center;
+  }
+  
+  .footer-bottom-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* WhatsApp */
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    font-size: var(--text-2xl);
+    bottom: var(--space-4);
+    right: var(--space-4);
+  }
+  
+  /* Back to Top */
+  .back-to-top {
+    bottom: 80px;
+    right: var(--space-4);
+    width: 40px;
+    height: 40px;
+    font-size: var(--text-base);
+  }
+  
+  /* Toast */
+  .toast-container {
+    left: var(--space-4);
+    right: var(--space-4);
+    top: calc(var(--header-height) + var(--space-3));
+  }
+  
+  .toast {
+    min-width: auto;
+    width: 100%;
+  }
+}
+
+/* ==========================================
+   TRÈS PETITS ÉCRANS (max-width: 375px)
+   ========================================== */
+
+@media (max-width: 375px) {
+  h1 {
+    font-size: var(--text-2xl);
+  }
+  
+  .hero h1 {
+    font-size: var(--text-2xl);
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2);
+  }
+  
+  .stat-item .stat-number {
+    font-size: var(--text-xl);
+  }
+  
+  .navbar-brand .brand-text .brand-sub {
+    font-size: 0.6rem;
+  }
+}
+
+/* ==========================================
+   GRANDS ÉCRANS (min-width: 1400px)
+   ========================================== */
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+  
+  h1 {
+    font-size: var(--text-6xl);
+  }
+  
+  .hero h1 {
+    font-size: var(--text-6xl);
+  }
+  
+  .solutions-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ==========================================
+   IMPRESSION
+   ========================================== */
+
+@media print {
+  .navbar,
+  .whatsapp-float,
+  .back-to-top,
+  .scroll-progress {
+    display: none !important;
+  }
+  
+  .hero {
+    min-height: auto;
+    padding: var(--space-5) 0;
+    background: var(--white);
+  }
+  
+  .hero h1 {
+    color: var(--black-premium);
+  }
+  
+  .hero p {
+    color: var(--gray-600);
+  }
+  
+  .section {
+    padding: var(--space-4) 0;
+    page-break-inside: avoid;
+  }
+  
+  .container {
+    max-width: 100%;
+    padding: 0 var(--space-4);
+  }
+}
+
+/* ==========================================
+   PRÉFÉRENCES DE MOUVEMENT RÉDUIT
+   ========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
