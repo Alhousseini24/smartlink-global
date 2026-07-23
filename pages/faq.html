@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Questions fréquentes | SMARTLINK GLOBAL</title>
+    <meta name="description" content="Trouvez les réponses à vos questions sur nos solutions de sécurité : vidéosurveillance, GPS, contrôle d'accès, incendie, clôtures, Smart Home.">
+    
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Quels sont vos domaines d'intervention ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nous intervenons dans la vidéosurveillance, le contrôle d'accès, les systèmes GPS, la sécurité incendie, les clôtures électriques et les solutions Smart Home."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Proposez-vous des contrats de maintenance ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Oui, nous proposons des contrats de maintenance préventive et corrective adaptés à vos besoins, avec des interventions rapides et un suivi régulier."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Comment obtenir un devis ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Vous pouvez remplir notre formulaire en ligne, nous contacter par téléphone ou par email. Notre équipe vous répondra sous 24h avec un devis personnalisé."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Styles communs -->
+    <link rel="stylesheet" href="../assets/css/variables.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/animations.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar (identique) -->
+    <header class="navbar" id="navbar">...</header>
+
+    <main id="main-content">
+        <!-- Hero FAQ -->
+        <section style="padding-top: calc(var(--header-height) + var(--space-6)); padding-bottom: var(--space-7); background: var(--black-premium);">
+            <div class="container">
+                <div class="text-center" data-aos="fade-up">
+                    <span class="hero-badge" style="background: rgba(27,95,175,0.15); border-color: rgba(27,95,175,0.2); color: var(--primary-blue);">
+                        <i class="fas fa-question-circle"></i> FAQ
+                    </span>
+                    <h1 style="color: var(--white);">Questions <span style="color: var(--primary-gold);">fréquentes</span></h1>
+                    <p style="color: var(--gray-300); max-width: 600px; margin: 0 auto;">
+                        Retrouvez les réponses aux questions les plus posées sur nos services et solutions.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Accordéon FAQ -->
+        <section class="section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="accordion" id="faqFullAccordion">
+                            <!-- FAQ 1 -->
+                            <div class="accordion-item" data-aos="fade-up">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                        Quels sont vos domaines d'intervention ?
+                                    </button>
+                                </h3>
+                                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqFullAccordion">
+                                    <div class="accordion-body">
+                                        Nous intervenons dans <strong>6 domaines principaux</strong> :
+                                        <ul>
+                                            <li>Vidéosurveillance (CCTV)</li>
+                                            <li>Systèmes GPS et gestion de flotte</li>
+                                            <li>Contrôle d'accès (biométrique, RFID)</li>
+                                            <li>Sécurité incendie (détection, extinction)</li>
+                                            <li>Clôtures électriques et alarmes périmétriques</li>
+                                            <li>Smart Home et domotique</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 2 -->
+                            <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                        Quels types de clients accompagnez-vous ?
+                                    </button>
+                                </h3>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqFullAccordion">
+                                    <div class="accordion-body">
+                                        Nous accompagnons aussi bien les <strong>entreprises B2B</strong> (banques, mines, télécoms, industries, BTP, ONG) que les <strong>particuliers B2C</strong> (villas, résidences, commerces, PME).
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 3 -->
+                            <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                        Proposez-vous des contrats de maintenance ?
+                                    </button>
+                                </h3>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqFullAccordion">
+                                    <div class="accordion-body">
+                                        Oui, nous proposons des <strong>contrats de maintenance</strong> :
+                                        <ul>
+                                            <li><strong>Maintenance préventive</strong> : inspections régulières</li>
+                                            <li><strong>Maintenance corrective</strong> : interventions rapides</li>
+                                            <li><strong>SAV 24/7</strong> : assistance téléphonique et déplacements</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 4 à 20 continuent de la même manière -->
+                            <!-- ... -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer & Scripts -->
+    <footer class="footer">...</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

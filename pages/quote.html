@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demander un devis - SMARTLINK GLOBAL | Sécurité Mali</title>
+    <meta name="description" content="Demandez votre devis personnalisé pour nos solutions de sécurité : vidéosurveillance, GPS, contrôle d'accès, incendie, clôtures, Smart Home.">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Demande de devis",
+        "description": "Formulaire de demande de devis pour les solutions de sécurité SMARTLINK GLOBAL",
+        "url": "https://smartlinkglobal.net/pages/quote.html"
+    }
+    </script>
+
+    <!-- Styles communs -->
+    <link rel="stylesheet" href="../assets/css/variables.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/animations.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">...</header>
+
+    <main id="main-content">
+        <!-- Hero -->
+        <section style="padding-top: calc(var(--header-height) + var(--space-6)); padding-bottom: var(--space-6); background: var(--black-premium);">
+            <div class="container">
+                <div class="text-center" data-aos="fade-up">
+                    <h1 style="color: var(--white);">Demander un <span style="color: var(--primary-gold);">devis</span></h1>
+                    <p style="color: var(--gray-300); max-width: 600px; margin: 0 auto;">
+                        Remplissez le formulaire ci-dessous et recevez un devis personnalisé sous 24h.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulaire -->
+        <section class="section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8" data-aos="fade-up">
+                        <form id="quoteForm" class="quote-form" style="background: var(--white); padding: var(--space-6); border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
+                            <div class="row g-4">
+                                <!-- Nom -->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="quoteName" class="form-label">Nom complet <span class="required">*</span></label>
+                                        <input type="text" id="quoteName" name="name" class="form-control" placeholder="Votre nom" required>
+                                    </div>
+                                </div>
+                                
+                                <!-- Société -->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="quoteCompany" class="form-label">Société</label>
+                                        <input type="text" id="quoteCompany" name="company" class="form-control" placeholder="Nom de votre entreprise">
+                                    </div>
+                                </div>
+                                
+                                <!-- Téléphone -->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="quotePhone" class="form-label">Téléphone <span class="required">*</span></label>
+                                        <input type="tel" id="quotePhone" name="phone" class="form-control" placeholder="+223 78 80 87 87" required>
+                                    </div>
+                                </div>
+                                
+                                <!-- Email -->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="quoteEmail" class="form-label">Email <span class="required">*</span></label>
+                                        <input type="email" id="quoteEmail" name="email" class="form-control" placeholder="votre@email.com" required>
+                                    </div>
+                                </div>
+                                
+                                <!-- Type de besoin -->
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="quoteNeed" class="form-label">Type de besoin <span class="required">*</span></label>
+                                        <select id="quoteNeed" name="needs" class="form-control" required>
+                                            <option value="">Sélectionnez un type...</option>
+                                            <option value="cctv">Vidéosurveillance / CCTV</option>
+                                            <option value="gps">GPS / Gestion de flotte</option>
+                                            <option value="acces">Contrôle d'accès</option>
+                                            <option value="incendie">Sécurité incendie</option>
+                                            <option value="clotures">Clôtures électriques</option>
+                                            <option value="smarthome">Smart Home</option>
+                                            <option value="audit">Audit de sécurité</option>
+                                            <option value="maintenance">Maintenance</option>
+                                            <option value="other">Autre</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <!-- Message -->
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="quoteMessage" class="form-label">Message <span class="required">*</span></label>
+                                        <textarea id="quoteMessage" name="message" class="form-control" rows="5" placeholder="Décrivez votre projet..." required></textarea>
+                                    </div>
+                                </div>
+                                
+                                <!-- Bouton -->
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-gold btn-lg" style="width: 100%;">
+                                        <i class="fas fa-paper-plane"></i> Envoyer ma demande de devis
+                                    </button>
+                                    <p style="font-size: var(--text-sm); color: var(--gray-500); margin-top: var(--space-3); text-align: center;">
+                                        <i class="fas fa-lock"></i> Vos données sont sécurisées et confidentielles
+                                    </p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Informations de contact -->
+        <section class="section" style="background: var(--gray-100);">
+            <div class="container">
+                <div class="row g-4 text-center">
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div style="font-size: var(--text-4xl); color: var(--primary-blue);"><i class="fas fa-phone"></i></div>
+                        <h4>Téléphone</h4>
+                        <p><a href="tel:+22378808787">+223 78 80 87 87</a><br><a href="tel:+22378193633">+223 78 19 36 33</a></p>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                        <div style="font-size: var(--text-4xl); color: var(--primary-gold);"><i class="fas fa-envelope"></i></div>
+                        <h4>Email</h4>
+                        <p><a href="mailto:hermann.mounkoro@smartlinkglobal.net">hermann.mounkoro@smartlinkglobal.net</a></p>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                        <div style="font-size: var(--text-4xl); color: var(--primary-green);"><i class="fab fa-whatsapp"></i></div>
+                        <h4>WhatsApp</h4>
+                        <p><a href="https://wa.me/22378808787">+223 78 80 87 87</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer & Scripts -->
+    <footer class="footer">...</footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/form.js"></script>
+</body>
+</html>

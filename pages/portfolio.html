@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réalisations - SMARTLINK GLOBAL | Projets de sécurité Mali</title>
+    <meta name="description" content="Découvrez nos réalisations en sécurité : vidéosurveillance, GPS, contrôle d'accès, sécurité incendie. Projets réalisés au Mali et en Afrique de l'Ouest.">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Portfolio SMARTLINK GLOBAL",
+        "description": "Projets de sécurité réalisés par SMARTLINK GLOBAL",
+        "url": "https://smartlinkglobal.net/pages/portfolio.html"
+    }
+    </script>
+
+    <!-- Styles communs -->
+    <link rel="stylesheet" href="../assets/css/variables.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/animations.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">...</header>
+
+    <main id="main-content">
+        <!-- Hero -->
+        <section style="padding-top: calc(var(--header-height) + var(--space-6)); padding-bottom: var(--space-7); background: var(--black-premium);">
+            <div class="container">
+                <div class="text-center" data-aos="fade-up">
+                    <span class="hero-badge" style="background: rgba(27,95,175,0.15); border-color: rgba(27,95,175,0.2); color: var(--primary-blue);">
+                        <i class="fas fa-images"></i> Portfolio
+                    </span>
+                    <h1 style="color: var(--white);">Nos <span style="color: var(--primary-gold);">réalisations</span></h1>
+                    <p style="color: var(--gray-300); max-width: 600px; margin: 0 auto;">
+                        Découvrez nos projets récents dans différents secteurs
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Filterable -->
+        <section class="section">
+            <div class="container">
+                <!-- Filtres -->
+                <div class="portfolio-filters" data-aos="fade-up" style="display: flex; justify-content: center; gap: var(--space-3); flex-wrap: wrap; margin-bottom: var(--space-5);">
+                    <button class="btn btn-sm btn-secondary filter-btn active" data-filter="all">Tous</button>
+                    <button class="btn btn-sm btn-secondary filter-btn" data-filter="camera">Caméras</button>
+                    <button class="btn btn-sm btn-secondary filter-btn" data-filter="reseau">Réseaux</button>
+                    <button class="btn btn-sm btn-secondary filter-btn" data-filter="gps">GPS</button>
+                    <button class="btn btn-sm btn-secondary filter-btn" data-filter="acces">Contrôle d'accès</button>
+                    <button class="btn btn-sm btn-secondary filter-btn" data-filter="incendie">Incendie</button>
+                </div>
+
+                <!-- Grid -->
+                <div class="portfolio-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4);">
+                    <!-- Projet 1 -->
+                    <div class="portfolio-item" data-category="camera" data-aos="fade-up" data-aos-delay="100">
+                        <div style="border-radius: var(--radius-lg); overflow: hidden; position: relative; box-shadow: var(--shadow-md); background: var(--white);">
+                            <img src="../assets/images/portfolio/project1.jpg" alt="Installation caméras banque Bamako" loading="lazy" style="width: 100%; height: 250px; object-fit: cover;">
+                            <div style="padding: var(--space-3);">
+                                <h4 style="font-size: var(--text-base);">Banque Atlantique</h4>
+                                <p style="font-size: var(--text-sm); color: var(--gray-500); margin: 0;">50 caméras 4K, vision nocturne IA</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projet 2 -->
+                    <div class="portfolio-item" data-category="gps" data-aos="fade-up" data-aos-delay="200">
+                        <div style="border-radius: var(--radius-lg); overflow: hidden; position: relative; box-shadow: var(--shadow-md); background: var(--white);">
+                            <img src="../assets/images/portfolio/project2.jpg" alt="GPS gestion flotte Mali" loading="lazy" style="width: 100%; height: 250px; object-fit: cover;">
+                            <div style="padding: var(--space-3);">
+                                <h4 style="font-size: var(--text-base);">Transport Express</h4>
+                                <p style="font-size: var(--text-sm); color: var(--gray-500); margin: 0;">100 véhicules, géolocalisation temps réel</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projet 3 -->
+                    <div class="portfolio-item" data-category="acces" data-aos="fade-up" data-aos-delay="300">
+                        <div style="border-radius: var(--radius-lg); overflow: hidden; position: relative; box-shadow: var(--shadow-md); background: var(--white);">
+                            <img src="../assets/images/portfolio/project3.jpg" alt="Contrôle d'accès biométrique" loading="lazy" style="width: 100%; height: 250px; object-fit: cover;">
+                            <div style="padding: var(--space-3);">
+                                <h4 style="font-size: var(--text-base);">Siège Social Télécoms</h4>
+                                <p style="font-size: var(--text-sm); color: var(--gray-500); margin: 0;">Contrôle d'accès biométrique, 500 utilisateurs</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projet 4 -->
+                    <div class="portfolio-item" data-category="incendie" data-aos="fade-up" data-aos-delay="400">
+                        <div style="border-radius: var(--radius-lg); overflow: hidden; position: relative; box-shadow: var(--shadow-md); background: var(--white);">
+                            <img src="../assets/images/portfolio/project4.jpg" alt="Sécurité incendie" loading="lazy" style="width: 100%; height: 250px; object-fit: cover;">
+                            <div style="padding: var(--space-3);">
+                                <h4 style="font-size: var(--text-base);">Mine d'or</h4>
+                                <p style="font-size: var(--text-sm); color: var(--gray-500); margin: 0;">Système incendie, détection et extinction</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projet 5 -->
+                    <div class="portfolio-item" data-category="reseau" data-aos="fade-up" data-aos-delay="500">
+                        <div style="border-radius: var(--radius-lg); overflow: hidden; position: relative; box-shadow: var(--shadow-md); background: var(--white);">
+                            <img src="../assets/images/portfolio/project5.jpg" alt="Réseau informatique" loading="lazy" style="width: 100%; height: 250px; object-fit: cover;">
+                            <div style="padding: var(--space-3);">
+                                <h4 style="font-size: var(--text-base);">ONG Internationale</h4>
+                                <p style="font-size: var(--text-sm); color: var(--gray-500); margin: 0;">Infrastructure réseau, 200 postes</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projet 6 -->
+                    <div class="portfolio-item" data-category="camera" data-aos="fade-up" data-aos-delay="600">
+                        <div style="border-radius: var(--radius-lg); overflow: hidden; position: relative; box-shadow: var(--shadow-md); background: var(--white);">
+                            <img src="../assets/images/portfolio/project6.jpg" alt="Vidéosurveillance centre commercial" loading="lazy" style="width: 100%; height: 250px; object-fit: cover;">
+                            <div style="padding: var(--space-3);">
+                                <h4 style="font-size: var(--text-base);">Centre Commercial</h4>
+                                <p style="font-size: var(--text-sm); color: var(--gray-500); margin: 0;">30 caméras, surveillance intelligente</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Load More -->
+                <div class="text-center mt-5" data-aos="fade-up">
+                    <button class="btn btn-primary btn-lg" id="loadMore">
+                        <i class="fas fa-plus"></i> Voir plus de réalisations
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">...</footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/animations.js"></script>
+</body>
+</html>
