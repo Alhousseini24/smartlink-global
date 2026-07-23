@@ -1,0 +1,62 @@
+# ============================================
+# SMARTLINK GLOBAL - robots.txt
+# Version 1.0
+# ============================================
+
+User-agent: *
+Allow: /
+Disallow: /assets/
+Disallow: /components/
+Disallow: /pages/mentions-legales.html
+Disallow: /pages/politique-confidentialite.html
+Disallow: /pages/cookies.html
+
+# Sitemap
+Sitemap: https://smartlinkglobal.net/seo/sitemap.xml
+
+# Crawl-delay pour Googlebot
+Crawl-delay: 1
+
+# ============================================
+# USER-AGENTS SPÉCIFIQUES
+# ============================================
+
+# Googlebot
+User-agent: Googlebot
+Allow: /
+Disallow: /assets/
+Disallow: /components/
+Sitemap: https://smartlinkglobal.net/seo/sitemap.xml
+
+# Bingbot
+User-agent: Bingbot
+Allow: /
+Disallow: /assets/
+Disallow: /components/
+Sitemap: https://smartlinkglobal.net/seo/sitemap.xml
+
+# Yandex
+User-agent: Yandex
+Allow: /
+Disallow: /assets/
+Disallow: /components/
+Sitemap: https://smartlinkglobal.net/seo/sitemap.xml
+
+# ============================================
+# BOTS NON SOUHAITÉS
+# ============================================
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
